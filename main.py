@@ -24,7 +24,7 @@ async def entrypoint(ctx: JobContext):
         vad=silero.VAD.load(),
         stt=openai.STT(detect_language=True),
         llm=openai.LLM(),
-        tts=openai.TTS(detect_language=True),
+        tts=openai.TTS(),
         chat_ctx=initial_ctx,
         fnc_ctx=fnc_ctx,
     )
