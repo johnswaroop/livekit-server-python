@@ -8,6 +8,7 @@ from api import AssistantFnc
 
 load_dotenv()
 
+# language detect added
 
 async def entrypoint(ctx: JobContext):
     initial_ctx = llm.ChatContext().append(
